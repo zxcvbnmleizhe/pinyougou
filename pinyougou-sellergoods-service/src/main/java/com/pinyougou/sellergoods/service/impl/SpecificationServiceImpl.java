@@ -3,6 +3,7 @@ import java.util.List;
 
 import com.pinyougou.mapper.TbSpecificationOptionMapper;
 import com.pinyougou.pojo.TbSpecificationOption;
+import com.pinyougou.pojo.TbSpecificationOptionExample;
 import com.pinyougou.pojogroup.Specification;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.alibaba.dubbo.config.annotation.Service;
@@ -28,7 +29,7 @@ public class SpecificationServiceImpl implements SpecificationService {
 	private TbSpecificationMapper specificationMapper;
 
 	@Autowired
-    private TbSpecificationOptionMapper tbSpecificationOptionMapper;
+    private TbSpecificationOptionMapper specificationOptionMapper;
 	
 	/**
 	 * 查询全部
@@ -63,7 +64,7 @@ public class SpecificationServiceImpl implements SpecificationService {
         for (int i = 0; i < tbSpecificationOption.size(); i++) {
             TbSpecificationOption specificationOption = tbSpecificationOption.get(i);
             specificationOption.setSpecId(id);
-            tbSpecificationOptionMapper.insert(specificationOption);
+            specificationOptionMapper.insert(specificationOption);
         }
 
 
@@ -75,8 +76,19 @@ public class SpecificationServiceImpl implements SpecificationService {
 	 * 修改
 	 */
 	@Override
-	public void update(TbSpecification specification){
-		specificationMapper.updateByPrimaryKey(specification);
+	public void update(Specification specification){
+	    //更新头
+		specificationMapper.updateByPrimaryKey(specification.getSpecification());
+		//更新行
+        TbSpecificationOptionExample example = new TbSpecificationOptionExample();
+        TbSpecificationOptionExample.Criteria criteria = example.createCriteria();
+        criteria.andSpecIdEqualTo(specification.getSpecification().getId());
+        specificationOptionMapper.deleteByExample(example);
+        for (int i = 0; i < specification.getSpecificationOptionList().size(); i++) {
+            TbSpecificationOption tbSpecificationOption = specification.getSpecificationOptionList().get(i);
+            tbSpecificationOption.setSpecId(specification.getSpecification().getId());
+            specificationOptionMapper.insert(tbSpecificationOption);
+        }
 	}	
 	
 	/**
@@ -85,8 +97,19 @@ public class SpecificationServiceImpl implements SpecificationService {
 	 * @return
 	 */
 	@Override
-	public TbSpecification findOne(Long id){
-		return specificationMapper.selectByPrimaryKey(id);
+	public Specification findOne(Long id){
+        Specification specification = new Specification();
+        //获取头
+        specification.setSpecification(specificationMapper.selectByPrimaryKey(id));
+        //获取列
+        TbSpecificationOptionExample example = new TbSpecificationOptionExample();
+        TbSpecificationOptionExample.Criteria criteria = example.createCriteria();
+        criteria.andSpecIdEqualTo(id);
+        List<TbSpecificationOption> tbSpecificationOptions = specificationOptionMapper.selectByExample(example);
+        specification.setSpecificationOptionList(tbSpecificationOptions);
+        //数据返回
+        return specification;
+//        return  specificationMapper.selectByPrimaryKey(id);
 	}
 
 	/**
@@ -95,7 +118,14 @@ public class SpecificationServiceImpl implements SpecificationService {
 	@Override
 	public void delete(Long[] ids) {
 		for(Long id:ids){
-			specificationMapper.deleteByPrimaryKey(id);
+			//删除头
+		    specificationMapper.deleteByPrimaryKey(id);
+			//删除行
+            TbSpecificationOptionExample example = new TbSpecificationOptionExample();
+            TbSpecificationOptionExample.Criteria criteria = example.createCriteria();
+            criteria.andSpecIdEqualTo(id);
+            specificationOptionMapper.deleteByExample(example);
+
 		}		
 	}
 	

@@ -33,9 +33,10 @@ app.controller('specificationController' ,function($scope,$controller   ,specifi
 	
 	//保存 
 	$scope.save=function(){
+		console.log("实体");
         console.info($scope.entity);
-		var serviceObject;//服务层对象  				
-		if($scope.entity.id!=null){//如果有ID
+		var serviceObject;//服务层对象
+		if($scope.entity.specification.id!=null){//如果有ID
 			serviceObject=specificationService.update( $scope.entity ); //修改  
 		}else{
 
@@ -87,6 +88,7 @@ app.controller('specificationController' ,function($scope,$controller   ,specifi
 
     }
 
+    //定义两个类
 	$scope.entity = {specificationOptionList:[]};
 	//增加行
 	$scope.addTableRow = function () {

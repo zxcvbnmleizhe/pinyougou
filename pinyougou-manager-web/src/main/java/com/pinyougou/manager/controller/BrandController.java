@@ -15,7 +15,13 @@ import entity.PageResult;
 import entity.Result;
 
 
-
+/**
+ *
+ * 功能描述:gitceshi
+ *
+ * @author leizhe
+ * @date Created in 19:45 2018/9/13
+ */
 @RestController
 @RequestMapping(value="brand")
 public class BrandController {

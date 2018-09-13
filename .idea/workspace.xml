@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0957a4f-2ae7-4031-a814-4974ccb57dbc" name="Default" comment="" />
+    <list default="true" id="e0957a4f-2ae7-4031-a814-4974ccb57dbc" name="Default" comment="测试">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-manager-web/src/main/java/com/pinyougou/manager/controller/BrandController.java" afterPath="$PROJECT_DIR$/pinyougou-manager-web/src/main/java/com/pinyougou/manager/controller/BrandController.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/pinyougou-manager-web/target/" />
     <ignored path="$PROJECT_DIR$/pinyougou-sellergoods-interface/target/" />
     <ignored path="$PROJECT_DIR$/pinyougou-pojo/target/" />
@@ -31,11 +34,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpecificationServiceImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SpecificationServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pinyougou-sellergoods-service/src/main/java/com/pinyougou/sellergoods/service/impl/SpecificationServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
+            <state relative-caret-position="19">
               <caret line="63" column="57" lean-forward="false" selection-start-line="63" selection-start-column="57" selection-end-line="63" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BrandController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pinyougou-manager-web/src/main/java/com/pinyougou/manager/controller/BrandController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -66,16 +79,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1976">
               <caret line="104" column="11" lean-forward="false" selection-start-line="98" selection-start-column="2" selection-end-line="104" selection-end-column="11" />
-              <folding>
-                <marker date="1535676050452" expanded="true" signature="3340:3451" ph="select from tb_specification" />
-                <marker date="1535676050452" expanded="true" signature="3535:3600" ph="delete from tb_specification... " />
-                <marker date="1535676050452" expanded="true" signature="3708:3736" ph="delete from tb_specification... " />
-                <marker date="1535676050452" expanded="true" signature="4049:4158" ph="insert into tb_specification... " />
-                <marker date="1535676050452" expanded="true" signature="4844:4881" ph="select count... tb_specification" />
-                <marker date="1535676050452" expanded="true" signature="5475:5595" ph="update tb_specification... " />
-                <marker date="1535676050452" expanded="true" signature="5811:5991" ph="update tb_specification... " />
-                <marker date="1535676050452" expanded="true" signature="6095:6204" ph="update tb_specification... " />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -129,6 +133,9 @@
       <find>insert</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -156,6 +163,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/pinyougou-dao/src/main/resources/com/pinyougou/mapper/TbSpecificationMapper.xml" />
         <option value="$PROJECT_DIR$/pinyougou-dao/src/main/java/com/pinyougou/mapper/TbSpecificationMapper.java" />
+        <option value="$PROJECT_DIR$/pinyougou-manager-web/src/main/java/com/pinyougou/manager/controller/BrandController.java" />
       </list>
     </option>
   </component>
@@ -217,7 +225,7 @@
     <option name="height" value="688" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -230,13 +238,65 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="pinyougou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-manager-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="SearchEverywhereHistoryKey" value="base&#9;FILE&#9;file://D:/work/pinyougou-parent/pinyougou-manager-web/src/main/webapp/js/controller/baseController.js" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -538,11 +598,21 @@
       <workItem from="1535675898601" duration="219000" />
       <workItem from="1535877175762" duration="599000" />
       <workItem from="1535934835887" duration="8000" />
+      <workItem from="1536833631959" duration="25000" />
+      <workItem from="1536839058931" duration="273000" />
     </task>
+    <task id="LOCAL-00001" summary="测试">
+      <created>1536839190666</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1536839190666</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27344000" />
+    <option name="totallyTimeSpent" value="27642000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -555,7 +625,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905295" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -565,13 +634,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4317817" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32744783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29198185" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2965204" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -594,37 +663,18 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/pinyougou-manager-web/src/main/java/com/pinyougou/manager/controller/BrandController.java</url>
-          <line>38</line>
-          <properties />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/pinyougou-manager-web/src/main/java/com/pinyougou/manager/controller/BrandController.java</url>
-          <line>45</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/pinyougou-manager-web/src/main/java/com/pinyougou/manager/controller/SpecificationController.java</url>
           <line>52</line>
           <properties />
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/pinyougou-sellergoods-service/src/main/java/com/pinyougou/sellergoods/service/impl/SpecificationServiceImpl.java</url>
-          <line>61</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/pinyougou-sellergoods-service/src/main/java/com/pinyougou/sellergoods/service/impl/SpecificationServiceImpl.java</url>
-          <line>56</line>
-          <properties />
-          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="9" />
@@ -735,14 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="39" lean-forward="false" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pinyougou-manager-web/src/main/java/com/pinyougou/manager/controller/BrandController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1102">
-          <caret line="72" column="46" lean-forward="false" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -994,16 +1036,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1976">
           <caret line="104" column="11" lean-forward="false" selection-start-line="98" selection-start-column="2" selection-end-line="104" selection-end-column="11" />
-          <folding>
-            <marker date="1535676050452" expanded="true" signature="3340:3451" ph="select from tb_specification" />
-            <marker date="1535676050452" expanded="true" signature="3535:3600" ph="delete from tb_specification... " />
-            <marker date="1535676050452" expanded="true" signature="3708:3736" ph="delete from tb_specification... " />
-            <marker date="1535676050452" expanded="true" signature="4049:4158" ph="insert into tb_specification... " />
-            <marker date="1535676050452" expanded="true" signature="4844:4881" ph="select count... tb_specification" />
-            <marker date="1535676050452" expanded="true" signature="5475:5595" ph="update tb_specification... " />
-            <marker date="1535676050452" expanded="true" signature="5811:5991" ph="update tb_specification... " />
-            <marker date="1535676050452" expanded="true" signature="6095:6204" ph="update tb_specification... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1017,8 +1050,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pinyougou-sellergoods-service/src/main/java/com/pinyougou/sellergoods/service/impl/SpecificationServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
+        <state relative-caret-position="19">
           <caret line="63" column="57" lean-forward="false" selection-start-line="63" selection-start-column="57" selection-end-line="63" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-manager-web/src/main/java/com/pinyougou/manager/controller/BrandController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
           <folding />
         </state>
       </provider>
